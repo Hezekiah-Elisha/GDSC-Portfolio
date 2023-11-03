@@ -4,20 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/navbar.css">
+
+    <!-- Favicon -->
+    <link href="images/favicon.png" rel="icon">
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Template Stylesheet -->
+    <link href="styles/navbar.css" rel="stylesheet">
+    <link href="styles/hero.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Welcome Wamoyi!</h1>
-    <div class="row">
-        <div class="col-12 col-lg-6">
-            <div class="card">
-                <img src="mutton.jpeg" class="card-img-top"/>
-                <div class="card-body">
-                    <h2>Fried mutton</h2>
+    
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
+        <a href="#" class="navbar-brand d-flex align-items-left px-4 px-lg-5">
+            <h1 class="m-0 text-primary"><i class="far fa-school me-3"><img src="images/logo_-removebg-preview.png" load="lazy"></i></h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="#" class="nav-item nav-link active">OUR CLUB</a>
+                <a href="#" class="nav-item nav-link">About Us</a>
+                <a href="#" class="nav-item nav-link">Vision</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Projects </a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="#" class="dropdown-item">Python</a>
+                        <a href="#" class="dropdown-item">Machine Learning</a>
+                        <a href="#" class="dropdown-item">Flutter</a>
+                        <a href="#" class="dropdown-item">Web Wednesdays</a>
+                        <a href="#" class="dropdown-item">Data Science</a>
+                    </div>
+                </div>
+                <a href="#" class="nav-item nav-link">Collaborate</a>
+            </div>
+            <button href="#" class="btn btn-secondary rounded-50 ">LOGIN<i class="fa fa-arrow-right ms-3"></i></button>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <main>
+        <!-- create hero -->
+        <section class="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 d-flex align-items-center">
+                        <div>
+                            <h1 class="text-primary">Let's learn new knowledge and abilities</h1>
+                            <p class="text-secondary">
+                               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa odio voluptatum dolorem quis porro delectus, et voluptate architecto magni minus consectetur tempora deleniti illo excepturi, quod nihil harum, unde ad?
+                            </p>
+                            <div class="row hero-btn w-20">
+                                <button class="col-9 learn-more">
+                                    Learn More about the club
+                                </button>
+                                <!-- <button class=""> -->
+                                    <i class="col-3 play bi bi-play-circle-fill"></i>
+                                <!-- </button> -->
+    
+                            </div>
+                            <!-- <button class="btn btn-primary rounded-50">JOIN US</button> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <img src="images/hero-bg.png" alt="hero" class="img-fluid hero-bg">
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <script src="./js/script.js"></script>
+        </section>
+        
+    </main>
+
+    <script src="js/navbar.js"></script>
 </body>
 </html>

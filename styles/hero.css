@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+.hero{
+    /* background: url(../images/hero-image.jpg) no-repeat center center/cover; */
+    background-color: #c2bcbc;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: var(--white);
+    padding: 0 1rem;
+}
+.hero h1{
+    font-size: 3rem;
+    color: black !important;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+.hero h2{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.hero a{
+    padding: 0.5rem 1rem;
+    background: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: var(--mainSpacing);
+    display: inline-block;
+    transition: var(--mainTransition);
+}
+.hero a:hover{
+    background: var(--dark-color);
+    color: var(--mainWhite);
+}
+.hero .social-icons{
+    margin-top: 1.5rem;
+}
+
+.hero-btn{
+    width: 70%;
+}
+
+.hero-btn .learn-more{
+    background-color: rgb(252, 202, 64);
+    border-radius: 5px;
+    border: none;
+    padding: 15px;
+    color: #0e536e;
+}
+.hero-btn .play{
+    background-color: rgba(255, 255, 255, 0.0);
+    font-size: 46px;    
+    border: none;
+    color: #0e536e;
+}
+
+.hero-bg{
+    /* height: calc(100vh - 200px); */
+}
